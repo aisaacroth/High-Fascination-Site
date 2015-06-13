@@ -1,19 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>{% block title %}{% endblock %}</title>
-    </head>
-    <body>
-        <div id="wrapper">
-            <div id="header">
-                <!-- Banner that will follow the user. -->
-            </div>
-            <div id="content">
-                {% block content %}{% endblock %}
-            </div>
-        </div>
-        <div id="footer">
-            Some footer stuff goes here.
-        </div>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="home">
+        <!-- Landing page when user enters site. -->
+        {% block home %}{% endblock %}
+      </div>
+      <div id="nav-bar">
+        {% block nav-bar %}{% endblock %}
+      </div>
+      <div id="about">
+        {% block about %}{% endblock %}
+      </div>
+      <div id="news">
+        {% block news %}{% endblock %}
+      </div>
+      <div id="music">
+        {% block music %}{% endblock %}
+      </div>
+      <div id="events">
+        {% block events %}{% endblock %}
+      </div>
+      <div id="media">
+        {% block media %}{% endblock %}
+      </div>
+      <div id="press">
+        {% block press %}{% endblock %}
+      </div>
+      <div id="contact">
+        {% block contact %}{% endblock %}
+      </div>
+    </div>
+    <div id="footer">
+      Some footer stuff goes here.
+    </div>
+  </body>
 </html>
