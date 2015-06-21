@@ -1,42 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/foundation.css') }}">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/app.css') }}">
+    <script src="{{ url_for('static', filename='js/vendor/modernizr.js') }}"></script>
+
   </head>
   <body>
     <div id="wrapper">
-      <div id="home">
+      <div class="row" id="home">
         <!-- Landing page when user enters site. -->
         {% block home %}{% endblock %}
       </div>
-      <div id="nav-bar">
+      <div class="contain-to-grid sticky" id="nav-bar">
         {% block nav_bar %}{% endblock %}
       </div>
-      <div id="about">
+      <div class="row" id="about">
         {% block about %}{% endblock %}
       </div>
-      <div id="news">
+      <div class="row" id="news">
         {% block news %}{% endblock %}
       </div>
-      <div id="music">
+      <div class="row" id="music">
         {% block music %}{% endblock %}
       </div>
-      <div id="events">
+      <div class="row" id="events">
         {% block events %}{% endblock %}
       </div>
-      <div id="media">
+      <div class="row" id="media">
         {% block media %}{% endblock %}
       </div>
-      <div id="press">
+      <div class="row" id="press">
         {% block press %}{% endblock %}
       </div>
-      <div id="contact">
+      <div class="row" id="contact">
         {% block contact %}{% endblock %}
       </div>
     </div>
-    <div id="footer">
-      Some footer stuff goes here.
+    <div class="row" id="footer">
+        Copyright High Fascination Band 2015.
     </div>
+
+    <script src="{{ url_for('static', filename='js/vendor/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/foundation/foundation.orbit.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/foundation/foundation.topbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script>
+        $(document).foundation();
+    </script>
   </body>
 </html>
