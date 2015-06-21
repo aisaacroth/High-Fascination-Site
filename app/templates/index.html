@@ -3,12 +3,43 @@
 {% block title %}Sample{% endblock %}
 
 {% block home %}
-The Landing Page
+<div class="small-12 small-centered columns">
+  <img src="{{ url_for('static', filename='img/logo.png') }}" />
+  <h1>New York City Based Rock Band</h1>
+  <div class="small-9 small-centered columns">
+    <ul class="snippet-orbit-content" data-orbit>
+      <li data-orbit-slide="snippet-1">
+        <div>
+          <p>The premier tracks on the album are like a ripe apple: crisp melodies when you sink your teeth into the music and juicy innards when you delve into its intricacies."</p>
+          <h5>- Music Court Blog -</h5>
+        </div>
+      </li>
+      <li data-orbit-slides="snippet-2">
+        <div>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          <h5>- Some Blog Site -</h5>
+      </div>
+    </ul>
+  </div>
+</div>
 {% endblock %}
 
 
 {% block nav_bar %}
-The navigation bar
+<nav class="top-bar" data-topbar role="navigation">
+  <section class="top-bar-section">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#press">Press</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </section>
+</nav>
 {% endblock %}
 
 
