@@ -64,7 +64,6 @@ div#home {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     max-width: 100%;
 }
 
@@ -73,6 +72,46 @@ div#home img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;
+}
+
+div#social-bar {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+div#social-bar ul.social-bar {
+    clear: left;
+    float: left;
+    left: 50%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+div#social-bar ul.social-bar li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 50%;
+}
+
+div#social-bar ul.social-bar li a {
+    display: block;
+    margin: 0 0 0 1px;
+    padding: 2px 2px;
+    line-height: 1.3rem;
+}
+
+div#social-bar ul.social-bar li a img {
+    margin-top: 1.0rem;
 }
 
 div#home h1 {
@@ -123,7 +162,10 @@ div#home .orbit-container ol.orbit-bullets li {
 
 nav.top-bar {
     background: #FFFFFF;
+    border-bottom: 5px solid #000000;
     float: left;
+    height: auto;
+    line-height: 2rem;
     max-width: 100% !important;
     overflow: hidden;
     position: relative;
@@ -134,39 +176,75 @@ nav.top-bar ul {
     clear: left;
     float: left;
     left: 50%;
+    margin: 0;
     padding: 0;
     position: relative;
     text-align: center;
 }
 
 .top-bar ul li {
-   background: #FFFFFF;
-   display: block;
-   float: left;
-   margin: 0;
-   padding: 0;
-   position: relative;
-   right: 50%;
+    background: #FFFFFF;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 50%;
+    width: 12.5%;
+    width: calc(100% / 8)
 }
 
 .top-bar ul li > a {
-  color: #333333;
-  display: block;
-  font-family: DIN-Regular;
-  margin: 0 0 0 1px !important;
-  padding: 2px 2px !important;
-  line-height: 1.3rem !important;
+    background: none !important;
+    color: #000000;
+    display: block;
+    font-family: DIN-Regular;
+    font-size: 1.5rem;
+    margin: 0 0 0 1px !important;
+    padding: 1.0rem 2.0rem !important;
+    line-height: 2.0rem !important;
 }
 
-div#social-bar {
-    float:left;
+div#about {
+    max-width: 100%;
+    white-space: pre-wrap;
+}
+
+div#about #about-blurb {
+    display: block;
+    height: auto;
+}
+
+div#about img {
+    display: block;
+    margin-bottom: 1.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.0rem;
+}
+
+div#about h1 {
+    font-family: DIN-Regular;
+    font-size: 4.0rem;
+    text-align: center;
+}
+
+div#about p {
+    font-family: DIN-Light;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+div#faces-bar {
+    float: left;
     height: 100%;
+    max-width: 100%;
     overflow: hidden;
     position: relative;
     width: 100%;
 }
 
-div#social-bar ul.social-bar {
+div#faces-bar ul {
     clear: left;
     float: left;
     left: 50%;
@@ -175,25 +253,44 @@ div#social-bar ul.social-bar {
     padding: 0;
     position: relative;
     text-align: center;
+    width: 50%;
+    height: 50%;
 }
 
-div#social-bar ul.social-bar li {
+div#faces-bar ul li {
     display: block;
     float: left;
     list-style: none;
-    margin: 0;
+    margin: 0 2rem;
     padding: 0;
     position: relative;
     right: 50%;
 }
 
-div#social-bar ul.social-bar li a {
-    display: block;
-    margin: 0 0 0 1px;
-    padding: 2px 2px;
-    line-height: 1.3rem;
+div#faces-bar ul li#andrew {
+   padding-top: 2rem;
+   width: 25%;
+   height: 50%;
 }
 
-div#social-bar ul.social-bar li a img {
-    margin-top: 1.0rem;
+div#faces-bar ul li#dan {
+  width: 22%;
+  height: 50%;
+}
+
+div#faces-bar ul li#noah {
+    width: 22%;
+    height: 55%;
+}
+
+div#faces-bar ul li img {
+    display: block;
+}
+
+div#faces-bar ul li h4 {
+    font-family: DIN-Regular;
+}
+
+div#faces-bar ul li h6 {
+    font-family: DIN-Regular;
 }

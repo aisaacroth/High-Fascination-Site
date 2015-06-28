@@ -93,7 +93,35 @@
 
 
 {% block about %}
-The About Section
+<div class="small-12 small-centered columns">
+  <img src="{{ url_for('static', filename='img/about/grey-logo.png') }}"/>
+  <h1>About High Fascination</h1>
+  <div id="about-blurb" class="small-9 small-centered columns">
+    <p>
+      High Fascination’s sound, described as “pristine and organic” by E Train, is an energetic blend of alternative rock, pop, folk, and psychedelic pop. Started in 2009 as a solo recording project, High Fascination’s first four albums Objections To Reality (April 2011), Sudden Movements (September 2011), A Time And Place (June 2013), and How Do You Do? (February 2014) were recorded solely by multi-instrumentalist Andrew Weiss. In September 2012, after meeting in New York City, the band developed into a collaborative project (Andrew Weiss: vocals/guitar, Dan Hemerlein: bass, Noah Rauchwerk: drums/vocals). Each member’s influences and inflections of musicianship create a sound that is able to be incorporated effectively into High Fascination songs. An EP titled Poster Boy was released in April 2014 to great reviews. The Music Court compared the music to “a ripe apple: crisp melodies when you sink your teeth into the music and juicy innards when you delve into its intricacies.” High Fascination combines smooth lyrics, melodies, and riffs to create a sound that optimizes both the studio and live performance. Forkster can “certainly see a big appeal for their glowing rock music charm, great tunes here!” The band is currently playing venues all around the New York City area
+    </p>
+  </div>
+  <div id="faces-bar">
+    <ul>
+      <li id="andrew">
+        <img src="{{ url_for('static', filename='img/about/band-members/andrew.png') }}"/>
+       <h4>Andrew Weiss</h4>
+        <h6>Guitar/Vocals</h6>
+      </li>
+      <li id="dan">
+        <img src="{{ url_for('static', filename='img/about/band-members/dan.png') }}"/>
+        <h4>Dan Hemerlein</h4>
+        <h6>Bass</h6>
+      </li>
+      <li id="noah">
+        <img src="{{ url_for('static', filename='img/about/band-members/noah.png') }}"/>
+        <h4>Noah Rauchwerk</h4>
+        <h6>Drums/Vocals</h6>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
 {% endblock %}
 
 
