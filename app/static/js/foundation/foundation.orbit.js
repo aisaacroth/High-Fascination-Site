@@ -423,8 +423,6 @@
       stack_on_small_class : 'orbit-stack-on-small',
       next_class : 'orbit-next',
       prev_class : 'orbit-prev',
-      timer_container_class : 'orbit-timer',
-      timer_paused_class : 'paused',
       timer_progress_class : 'orbit-progress',
       slides_container_class : 'orbit-slides-container',
       preloader_class : 'preloader',
