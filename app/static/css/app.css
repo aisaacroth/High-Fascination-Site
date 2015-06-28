@@ -1,3 +1,63 @@
+@font-face {
+    font-family: 'DIN-Regular';
+    src: url('../fonts/DIN/DIN-Regular.eot');
+    src: url('../fonts/DIN/DIN-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DIN/DIN-Regular.woff') format('woff'),
+         url('../fonts/DIN/DIN-Regular.ttf') format('truetype'),
+         url('../fonts/DIN/DIN-Regular.svg#DIN-Regular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimzeLegibility;
+}
+
+@font-face {
+    font-family: 'DIN-Black';
+    src: url('../fonts/DIN-Black/DIN-Black.eot');
+    src: url('../fonts/DIN-Black/DIN-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DIN-Black/DIN-Black.woff') format('woff'),
+	       url('../fonts/DIN-Black/DIN-Black.ttf') format('truetype'),
+	       url('../fonts/DIN-Black/DIN-Black.svg#DIN-Black') format('svg');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'DIN-Bold';
+    src: url('../fonts/DIN-Bold/DIN-Bold.eot');
+    src: url('../fonts/DIN-Bold/DIN-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DIN-Bold/DIN-Bold.woff') format('woff'),
+	       url('../fonts/DIN-Bold/DIN-Bold.ttf') format('truetype'),
+	       url('../fonts/DIN-Bold/DIN-Bold.svg#DIN-Bold') format('svg');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'DIN-Light';
+    src: url('../fonts/DIN-Light/DIN-Light.eot');
+    src: url('../fonts/DIN-Light/DIN-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DIN-Light/DIN-Light.woff') format('woff'),
+         url('../fonts/DIN-Light/DIN-Light.ttf') format('truetype'),
+         url('../fonts/DIN-Light/DIN-Light.svg#DIN-Light') format('svg');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'DIN-Medium';
+    src: url('../fonts/DIN-Medium/DIN-Medium.eot');
+    src: url('../fonts/DIN-Medium/DIN-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DIN-Medium/DIN-Medium.woff') format('woff'),
+         url('../fonts/DIN-Medium/DIN-Medium.ttf') format('truetype'),
+         url('../fonts/DIN-Medium/DIN-Medium.svg#DVN-Medium') format('svg');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 div#home {
     background: url('../img/home/red-lion-bg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -18,7 +78,10 @@ div#home img {
 div#home h1 {
     color: #FFFFFF;
     display: block;
-    margin-top: 0.5rem;
+    font-family: DIN-Light;
+    font-size: 4.0rem;
+    margin-top: 1.5rem;
+    padding-top: 5.0rem;
     text-align: center;
 }
 
@@ -31,12 +94,31 @@ div#home .orbit-container {
     white-space: pre-wrap;
 }
 
+div#home .orbit-container p {
+    font-family: DIN-LIGHT;
+    font-size: 2rem;
+}
+
 div#home .orbit-container h5 {
     color: #FFFFFF;
     display: block;
+    font-family: DIN-LIGHT;
+    font-size: 1.8rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+div#home .orbit-container ol.orbit-bullets li.active {
+    background: url('../img/home/ui/slider-on.png') no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+div#home .orbit-container ol.orbit-bullets li {
+    background: url('../img/home/ui/slider-off.png') no-repeat;
+    height: 25px;
+    width: 25px;
 }
 
 div#nav-bar {
