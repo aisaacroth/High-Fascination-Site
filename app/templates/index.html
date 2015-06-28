@@ -2,6 +2,7 @@
 
 {% block title %}Sample{% endblock %}
 
+
 {% block home %}
 <div class="small-12 small-centered columns">
   <img src="{{ url_for('static', filename='img/home/logo.png') }}"/>
@@ -126,30 +127,57 @@
 
 
 {% block news %}
-The News Section
+<div class="small-12 small-centered columns">
+  <h1>News</h1>
+  <div class="row">
+    <div class="small-8 small-centered columns">
+  <div class="small-5 columns" id="facebook-column">
+    <h2>Facebook</h2>
+  </div>
+  <div class="small-5 small-offset-1 columns" id="other-column">
+    <div id="twitter-section">
+      <h2>Twitter</h2>
+    </div>
+    <div id="instagram-section">
+      <h2>Instagram</h2>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 {% endblock %}
 
 
 {% block music %}
-The Music Section
+<div class="small-12 small-centered columns">
+  <h1>Music</h1>
+</div>
 {% endblock %}
 
 
 {% block events %}
-The Events Section
+<div class="small-12 small-centered columns">
+  <h1>Events</h1>
+</div>
 {% endblock %}
 
 
 {% block media %}
-The Media Section
+<div class="small-12 small-centered columns">
+  <h1>Media</h1>
+</div>
 {% endblock %}
 
 
 {% block press %}
-The Press Section
+<div class="small-12 small-centered columns">
+  <h1>Press</h1>
+</div>
 {% endblock %}
 
 
 {% block contact %}
-The Contact Section
+<div class="small-12 small-centered columns">
+  <h1>Contact</h1>
+</div>
 {% endblock %}

@@ -15,8 +15,8 @@
     src: url('../fonts/DIN-Black/DIN-Black.eot');
     src: url('../fonts/DIN-Black/DIN-Black.eot?#iefix') format('embedded-opentype'),
          url('../fonts/DIN-Black/DIN-Black.woff') format('woff'),
-	       url('../fonts/DIN-Black/DIN-Black.ttf') format('truetype'),
-	       url('../fonts/DIN-Black/DIN-Black.svg#DIN-Black') format('svg');
+         url('../fonts/DIN-Black/DIN-Black.ttf') format('truetype'),
+         url('../fonts/DIN-Black/DIN-Black.svg#DIN-Black') format('svg');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -27,8 +27,8 @@
     src: url('../fonts/DIN-Bold/DIN-Bold.eot');
     src: url('../fonts/DIN-Bold/DIN-Bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/DIN-Bold/DIN-Bold.woff') format('woff'),
-	       url('../fonts/DIN-Bold/DIN-Bold.ttf') format('truetype'),
-	       url('../fonts/DIN-Bold/DIN-Bold.svg#DIN-Bold') format('svg');
+         url('../fonts/DIN-Bold/DIN-Bold.ttf') format('truetype'),
+         url('../fonts/DIN-Bold/DIN-Bold.svg#DIN-Bold') format('svg');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -293,4 +293,111 @@ div#faces-bar ul li h4 {
 
 div#faces-bar ul li h6 {
     font-family: DIN-Regular;
+}
+
+div#news {
+    background: url('../img/news/live-shrine-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+}
+
+div#news h1 {
+    color: #FFFFFF;
+    font-family: DIN-Regular;
+    font-size: 4.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div#news div#facebook-column {
+    border: 5px solid #FFFFFF;
+}
+
+div#news div#facebook-column h2 {
+    color: #FFFFFF;
+    font-family: DIN-Regular;
+    margin-right: 1.0rem;
+    text-align: center;
+}
+
+div#news div#other-column {
+    margin-right: auto;
+}
+
+div#news div#other-column div#twitter-section {
+    border: 5px solid #FFFFFF;
+}
+
+div#news div#other-column div#instagram-section {
+    border: 5px solid #FFFFFF;
+}
+
+div#news div#other-column h2 {
+    color: #FFFFFF;
+    font-family: DIN-Regular;
+    text-align: center
+}
+
+div#music {
+
+}
+
+div#music h1 {
+    font-family: DIN-Regular;
+    font-size: 4.0rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#events {
+
+}
+
+div#events h1 {
+    font-family: DIN-Regular;
+    font-size: 4.0rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#meida {
+
+}
+
+div#media h1 {
+    font-family: DIN-Regular;
+    font-size: 4.0rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#press {
+
+}
+
+div#press h1 {
+    font-family: DIN-Regular;
+    font-size: 4.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div#contact {
+
+}
+
+div#contact h1 {
+    font-family: DIN-Regular;
+    font-size: 4.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
