@@ -121,13 +121,41 @@ div#home .orbit-container ol.orbit-bullets li {
     width: 25px;
 }
 
-div#nav-bar {
+nav.top-bar {
     background: #FFFFFF;
+    float: left;
+    max-width: 100% !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
-nav.top-bar {
-    max-width: 100% !important;
-    width: 100%;
+nav.top-bar ul {
+    clear: left;
+    float: left;
+    left: 50%;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.top-bar ul li {
+   background: #FFFFFF;
+   display: block;
+   float: left;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   right: 50%;
+}
+
+.top-bar ul li > a {
+  color: #333333;
+  display: block;
+  font-family: DIN-Regular;
+  margin: 0 0 0 1px !important;
+  padding: 2px 2px !important;
+  line-height: 1.3rem !important;
 }
 
 div#social-bar {
