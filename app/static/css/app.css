@@ -401,3 +401,53 @@ div#contact h1 {
     margin-right: auto;
     text-align: center;
 }
+
+div#footer {
+    background: #000000;
+    max-width: 100%;
+}
+
+div#footer div#content-wrapper{
+    margin-top: 3.0rem;
+}
+
+div#footer div#content-wrapper div#left-section img {
+    height: 50%;
+    width: 50%;
+}
+
+div#footer div#content-wrapper div#left-section p {
+    color: #FFFFFF;
+    font-family: DIN-Regular;
+    font-size: 1.0rem;
+    margin-top: 0.5rem;
+}
+
+div#footer div#content-wrapper div#mid-section h3 {
+    color: #FFFFFF;
+    font-family: DIN-Regular;
+    font-size: 1.5rem;
+}
+
+div#footer div#content-wrapper div#mid-section div#quick-links {
+    width: 75%;
+}
+
+div#footer div#content-wrapper div#mid-section div#quick-links ul {
+    list-style: none;
+}
+
+div#footer div#content-wrapper div#mid-section div#quick-links ul li {
+    background: #FFFFFF;
+}
+
+div#footer div#content-wrapper div#mid-section div#quick-links ul li a {
+    color: #000000;
+    font-family: DIN-Regular;
+}
+
+div#footer div#content-wrapper div#right-section h3 {
+    color: #FFFFFF;
+    font-family: DIN-Regular;
+    font-size: 1.5rem;
+}
