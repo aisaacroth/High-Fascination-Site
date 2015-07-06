@@ -353,7 +353,9 @@ section#music h1 {
 
 /* Events Section */
 section#events {
-
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
 }
 
 section#events h1 {
