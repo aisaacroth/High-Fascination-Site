@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: 'DIN-Regular';
     src: url('../fonts/DIN/DIN-Regular.eot');
@@ -58,23 +59,36 @@
     text-rendering: optimizeLegibility;
 }
 
-div#home {
+
+/* Overall HTML, Body and Main */
+html, body {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Landing Page */
+section#landing {
     background: url('../img/home/red-lion-bg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    max-width: 100%;
+    height: 100%;
 }
 
-div#home img {
+section#landing div.row {
+    height: 100%;
+}
+
+section#landing div.row div.small-12 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10rem;
+    margin-top: 5%;
 }
 
-div#social-bar {
+section#landing div.row div.small-12 div#social-bar {
     float: left;
     height: 100%;
     overflow: hidden;
@@ -82,7 +96,7 @@ div#social-bar {
     width: 100%;
 }
 
-div#social-bar ul.social-bar {
+section#landing div.row div.small-12 div#social-bar ul.social-bar {
     clear: left;
     float: left;
     left: 50%;
@@ -93,7 +107,7 @@ div#social-bar ul.social-bar {
     text-align: center;
 }
 
-div#social-bar ul.social-bar li {
+section#landing div.row div.small-12 div#social-bar ul.social-bar li {
     display: block;
     float: left;
     list-style: none;
@@ -103,28 +117,27 @@ div#social-bar ul.social-bar li {
     right: 50%;
 }
 
-div#social-bar ul.social-bar li a {
+section#landing div.row div.small-12 div#social-bar ul.social-bar li a {
     display: block;
     margin: 0 0 0 1px;
     padding: 2px 2px;
-    line-height: 1.3rem;
+    line-height: 130%;
 }
 
-div#social-bar ul.social-bar li a img {
+section#landing div.row div.small-12 div#social-bar ul.social-bar li a img {
     margin-top: 1.0rem;
 }
 
-div#home h1 {
+section#landing h1 {
     color: #FFFFFF;
     display: block;
     font-family: DIN-Light;
-    font-size: 4.0rem;
-    margin-top: 1.5rem;
-    padding-top: 5.0rem;
+    font-size: 200%;
+    margin-top: 10%;
     text-align: center;
 }
 
-div#home .orbit-container {
+section#landing .orbit-container {
     color: #FFFFFF;
     display: block;
     margin-left: auto;
@@ -133,33 +146,34 @@ div#home .orbit-container {
     white-space: pre-wrap;
 }
 
-div#home .orbit-container p {
+section#landing .orbit-container p {
     font-family: DIN-LIGHT;
-    font-size: 2rem;
+    font-size: 150%;
 }
 
-div#home .orbit-container h5 {
+section#landing .orbit-container h5 {
     color: #FFFFFF;
     display: block;
     font-family: DIN-LIGHT;
-    font-size: 1.8rem;
+    font-size: 150%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-div#home .orbit-container ol.orbit-bullets li.active {
+section#landing .orbit-container ol.orbit-bullets li.active {
     background: url('../img/home/ui/slider-on.png') no-repeat;
     height: 25px;
     width: 25px;
 }
 
-div#home .orbit-container ol.orbit-bullets li {
+section#landing .orbit-container ol.orbit-bullets li {
     background: url('../img/home/ui/slider-off.png') no-repeat;
     height: 25px;
     width: 25px;
 }
 
+/* Navigation Bar */
 nav.top-bar {
     background: #FFFFFF;
     border-bottom: 5px solid #000000;
@@ -182,7 +196,7 @@ nav.top-bar ul {
     text-align: center;
 }
 
-.top-bar ul li {
+nav.top-bar ul li {
     background: #FFFFFF;
     display: block;
     float: left;
@@ -194,7 +208,7 @@ nav.top-bar ul {
     width: calc(100% / 8)
 }
 
-.top-bar ul li > a {
+nav.top-bar ul li > a {
     background: none !important;
     color: #000000;
     display: block;
@@ -205,106 +219,87 @@ nav.top-bar ul {
     line-height: 2.0rem !important;
 }
 
-div#about {
+/* About Section */
+section#about {
+    height: 100%;
     max-width: 100%;
     white-space: pre-wrap;
+    line-height 0;
 }
 
-div#about #about-blurb {
-    display: block;
-    height: auto;
+section#about div.row {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    line-height: 0;
 }
 
-div#about img {
+section#about img {
     display: block;
-    margin-bottom: 1.0rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.0rem;
 }
 
-div#about h1 {
+section#about h1 {
     font-family: DIN-Regular;
-    font-size: 4.0rem;
+    font-size: 400%;
     text-align: center;
 }
 
-div#about p {
+section#about p {
+    display: block;
     font-family: DIN-Light;
-    font-size: 1.2rem;
-    text-align: justify;
+    font-size: 120%;
 }
 
-div#faces-bar {
-    float: left;
+section#about div#faces {
     height: 100%;
     max-width: 100%;
-    overflow: hidden;
-    position: relative;
+    text-align: center;
     width: 100%;
 }
 
-div#faces-bar ul {
-    clear: left;
-    float: left;
-    left: 50%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    width: 50%;
-    height: 50%;
+section#about div#faces div#andrew {
+    margin-left: 15%;
 }
 
-div#faces-bar ul li {
-    display: block;
-    float: left;
-    list-style: none;
-    margin: 0 2rem;
-    padding: 0;
-    position: relative;
-    right: 50%;
+section#about div#faces div#dan {
+    width:25%;
+    height: auto;
 }
 
-div#faces-bar ul li#andrew {
-   padding-top: 2rem;
-   width: 25%;
-   height: 50%;
+section#about div#faces div#dan img {
+    width: 100%;
+    height: auto;
 }
 
-div#faces-bar ul li#dan {
-  width: 22%;
-  height: 50%;
+section#about div#faces h4 {
+    font-family: "DIN-Regular"
 }
 
-div#faces-bar ul li#noah {
-    width: 22%;
-    height: 55%;
+section#about div#faces h6 {
+    font-family: "DIN-Regular";
 }
 
-div#faces-bar ul li img {
-    display: block;
-}
-
-div#faces-bar ul li h4 {
-    font-family: DIN-Regular;
-}
-
-div#faces-bar ul li h6 {
-    font-family: DIN-Regular;
-}
-
-div#news {
+/* News Section */
+section#news {
     background: url('../img/news/live-shrine-bg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
     max-width: 100%;
+    width: 100%;
 }
 
-div#news h1 {
+section#news div.row {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+section#news div.row h1 {
     color: #FFFFFF;
     font-family: DIN-Regular;
     font-size: 4.0rem;
@@ -313,40 +308,42 @@ div#news h1 {
     text-align: center;
 }
 
-div#news div#facebook-column {
+section#news div.row div#facebook-column {
     border: 5px solid #FFFFFF;
 }
 
-div#news div#facebook-column h2 {
+section#news div#facebook-column h2 {
     color: #FFFFFF;
     font-family: DIN-Regular;
-    margin-right: 1.0rem;
+    margin-right: 10%;
     text-align: center;
 }
 
-div#news div#other-column {
-    margin-right: auto;
+section#news div#other-column {
+    margin-right: 5%;
 }
 
-div#news div#other-column div#twitter-section {
+section#news div#other-column div#twitter-section {
+    border: 5px solid #FFFFFF;
+    margin-bottom: 5%;
+}
+
+section#news div#other-column div#instagram-section {
     border: 5px solid #FFFFFF;
 }
 
-div#news div#other-column div#instagram-section {
-    border: 5px solid #FFFFFF;
-}
-
-div#news div#other-column h2 {
+section#news div#other-column h2 {
     color: #FFFFFF;
     font-family: DIN-Regular;
     text-align: center
 }
 
-div#music {
-
+/* Music Section */
+section#music {
+    height: 100%;
 }
 
-div#music h1 {
+section#music h1 {
     font-family: DIN-Regular;
     font-size: 4.0rem;
     text-align: center;
@@ -354,11 +351,12 @@ div#music h1 {
     margin-right: auto;
 }
 
-div#events {
+/* Events Section */
+section#events {
 
 }
 
-div#events h1 {
+section#events h1 {
     font-family: DIN-Regular;
     font-size: 4.0rem;
     text-align: center;
@@ -366,11 +364,12 @@ div#events h1 {
     margin-right: auto;
 }
 
-div#meida {
+/* Media Section */
+section#media {
 
 }
 
-div#media h1 {
+section#media h1 {
     font-family: DIN-Regular;
     font-size: 4.0rem;
     text-align: center;
@@ -378,11 +377,12 @@ div#media h1 {
     margin-right: auto;
 }
 
-div#press {
+/* Press Section */
+section#press {
 
 }
 
-div#press h1 {
+section#press h1 {
     font-family: DIN-Regular;
     font-size: 4.0rem;
     margin-left: auto;
@@ -390,7 +390,8 @@ div#press h1 {
     text-align: center;
 }
 
-div#contact {
+/* Contact Section */
+section#contact {
 
 }
 
