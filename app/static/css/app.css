@@ -368,7 +368,7 @@ section#events h1 {
 
 /* Media Section */
 section#media {
-
+    height: 100%;
 }
 
 section#media h1 {
