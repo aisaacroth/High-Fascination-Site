@@ -10,42 +10,38 @@
 
   </head>
   <body>
-    <div id="wrapper">
-      <div class="row" id="home">
-        <!-- Landing page when user enters site. -->
+    <main>
+    <!-- Landing page when user enters site. -->
+      <section id="landing">
         {% block home %}{% endblock %}
-      </div>
-      <div class="contain-to-grid sticky" id="nav-bar">
+      </section>
         {% block nav_bar %}{% endblock %}
-      </div>
-      <div class="row" id="about">
+      <section id="about">
         {% block about %}{% endblock %}
-      </div>
-      <div class="row" id="news">
+      </section>
+      <section id="news">
         {% block news %}{% endblock %}
-      </div>
-      <div class="row" id="music">
+      </section>
+      <section id="music">
         {% block music %}{% endblock %}
-      </div>
-      <div class="row" id="events">
+      </section>
+      <section id="events">
         {% block events %}{% endblock %}
-      </div>
-      <div class="row" id="media">
+      </section>
+      <section id="media">
         {% block media %}{% endblock %}
-      </div>
-      <div class="row" id="press">
+      </section>
+      <section id="press">
         {% block press %}{% endblock %}
-      </div>
-      <div class="row" id="contact">
-        {% block contact %}{% endblock %}
-      </div>
-    </div>
-    <div class="row" id="footer">
+      </section>
+      <section id="contact">
+       {% block contact %}{% endblock %}
+      </section>
+    </main>
+    <footer>
       {% block footer %}{% endblock %}
-    </div>
-    <div class="row" id="end-bar">
       <p>Copyright High Fascination Band 2015.</p>
-    </div>
+    </footer>
 
     <script src="{{ url_for('static', filename='js/vendor/jquery.js') }}"></script>
     <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
@@ -53,7 +49,7 @@
     <script src="{{ url_for('static', filename='js/foundation/foundation.topbar.js') }}"></script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
     <script>
-        $(document).foundation();
+      $(document).foundation();
     </script>
   </body>
 </html>
