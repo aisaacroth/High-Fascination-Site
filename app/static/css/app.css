@@ -334,7 +334,7 @@ section#news div#other-column div#instagram-section {
 
 section#news div#other-column h2 {
     color: #FFFFFF;
-    font-family: DIN-Regular;
+    font-family: "DIN-Regular";
     text-align: center
 }
 
@@ -344,7 +344,7 @@ section#music {
 }
 
 section#music h1 {
-    font-family: DIN-Regular;
+    font-family: "DIN-Regular";
     font-size: 4.0rem;
     text-align: center;
     margin-left: auto;
@@ -359,7 +359,7 @@ section#events {
 }
 
 section#events h1 {
-    font-family: DIN-Regular;
+    font-family: "DIN-Regular";
     font-size: 4.0rem;
     text-align: center;
     margin-left: auto;
@@ -372,7 +372,7 @@ section#media {
 }
 
 section#media h1 {
-    font-family: DIN-Regular;
+    font-family: "DIN-Regular";
     font-size: 4.0rem;
     text-align: center;
     margin-left: auto;
@@ -381,11 +381,11 @@ section#media h1 {
 
 /* Press Section */
 section#press {
-
+    height: 100%;
 }
 
 section#press h1 {
-    font-family: DIN-Regular;
+    font-family: "DIN-Regular";
     font-size: 4.0rem;
     margin-left: auto;
     margin-right: auto;
@@ -394,11 +394,12 @@ section#press h1 {
 
 /* Contact Section */
 section#contact {
+    height: 100%;
 
 }
 
 div#contact h1 {
-    font-family: DIN-Regular;
+    font-family: "DIN-Regular";
     font-size: 4.0rem;
     margin-left: auto;
     margin-right: auto;
