@@ -394,8 +394,29 @@
 
 {% block contact %}
 <div class="row">
-  <div class="small-12 small-centered columns">
-    <h1>Contact</h1>
+  <h1>Contact</h1>
+  <div class="small-6 small-centered columns">
+    <div class="row">
+      <div class="small-4 columns">
+        <img src="http://placehold.it/140x100"/>
+      </div>
+      <div class="small-8 columns">
+        <h2>Email</h2>
+        <p>highfascination@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="small-4 columns">
+    <input type="text" placeholder="name"/>
+  </div>
+  <div class="small-4 columns">
+    <input type="text" placeholder="email"/>
+  </div>
+  <div class="small-4 columns">
+    <input type="text" placeholder="subject"/>
+  </div>
+  <div class="small-12 columns">
+    <textarea placeholder="message"></textarea>
   </div>
 </div>
 {% endblock %}
