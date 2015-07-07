@@ -301,7 +301,7 @@ section#news div.row {
 
 section#news div.row h1 {
     color: #FFFFFF;
-    font-family: DIN-Regular;
+    font-family: "DIN-Regular";
     font-size: 4.0rem;
     margin-left: auto;
     margin-right: auto;
@@ -343,12 +343,62 @@ section#music {
     height: 100%;
 }
 
+section#music div.row {
+}
+
 section#music h1 {
     font-family: "DIN-Regular";
-    font-size: 4.0rem;
+    font-size: 400%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+section#music div.row div.small-12 div.row div#album-info div.row div#year h2 {
+    font-family: "DIN-Regular";
+    font-size: 400%;
+    margin: 0;
+}
+
+section#music div#album-info div#ui ul.inline-list {
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+section#music div#album-info div#ui ul.inline-list li#reverse {
+    margin-top: 5%;
+}
+
+section#music div#album-info div#ui ul.inline-list li#play {
+}
+
+section#music div#album-info div#ui ul.inline-list li#fast-forward {
+    margin-top: 5%;
+}
+
+section#music div#album-info div.small-10 {
+    padding-left: 0;
+}
+
+section#msuic div#album-info img {
+    vertical-align: middle;
+}
+
+section#music div#album-info h2 {
+    font-family: "DIN-Regular";
+    font-size: 300%;
+}
+
+section#music div#album-info h6 {
+    font-family: "DIN-Bold";
+    font-size: 150%;
+    margin-bottom: 0;
+}
+
+section#music div#album-info p {
+    font-family: "DIN-Regular";
+    font-size: 100%;
+    margin-bottom: 0;
 }
 
 /* Events Section */
