@@ -8,7 +8,7 @@
          url('../fonts/DIN/DIN-Regular.svg#DIN-Regular') format('svg');
     font-style: normal;
     font-weight: normal;
-    text-rendering: optimzeLegibility;
+    text-rendering: optimizeLegibility;
 }
 
 @font-face {
@@ -401,19 +401,81 @@ section#music div#album-info p {
     margin-bottom: 0;
 }
 
+section#music div#album-info div#track-list ol li {
+    font-family: "DIN-Regular";
+    font-size: 100%;
+}
+
 /* Events Section */
 section#events {
+    background: url('../img/events/muhlenberg-bg.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
     max-width: 100%;
     width: 100%;
 }
 
 section#events h1 {
+    color: #FFFFFF;
     font-family: "DIN-Regular";
-    font-size: 4.0rem;
+    font-size: 400%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+section#events div#event-listing div.date-wrapper {
+    background: url('../img/events/cell.png') no-repeat center center scroll;
+    height: auto;
+    width: auto;
+}
+
+section#events div#event-listing div.date-wrapper h3 {
+    color: #FFFFFF;
+    font-family: "DIN-Medium";
+    font-size: 200%;
+    text-align: center;
+    padding-top: 15%;
+} 
+
+section#events div#event-listing div.date-wrapper h1 {
+    padding-top: 5%;
+}
+
+section#events div#event-listing div.small-4 {
+    text-align:center;
+}
+
+section#events div#event-listing div.small-4 h2 {
+    color: #FFFFFF;
+    font-family: "DIN-Regular";
+}
+
+section#events div#event-listing div.small-4 h4 {
+    color: #FFFFFF;
+    font-family: "DIN-Light";
+}
+
+section#events div#event-listing div.small-4 p {
+    color: #FFFFFF;
+    font-family: "DIN-Light";
+}
+
+section#events div#gig-carousel ul {
+    list-style: none;
+    text-align: center;
+}
+
+section#events div#gig-carousel ul li {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: "DIN-Regular";
+    font-size: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /* Media Section */
@@ -429,17 +491,47 @@ section#media h1 {
     margin-right: auto;
 }
 
+section#media div.row ul.button-group li a.button {
+    background-color: #000000;
+    font-family: "DIN-Regular";
+    font-size: 200%;
+}
+
 /* Press Section */
 section#press {
+    background: url('../img/press/greenpoint-bg.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
 }
 
 section#press h1 {
+    color: #FFFFFF;
     font-family: "DIN-Regular";
-    font-size: 4.0rem;
+    font-size: 400%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+section#press div.row div.large-4 {
+    text-align: center;
+}
+
+section#press div.row div.large-4 div.image-wrapper {
+}
+
+section#press div.row div.large-4 h4 {
+    color: #FFFFFF;
+    font-family: "DIN-Regular";
+}
+
+section#press div.row div.large-4 p {
+    color: #FFFFFF;
+    font-family: "DIN-Regular";
+    text-align: left;
 }
 
 /* Contact Section */
@@ -454,6 +546,26 @@ section#contact h1 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+section#contact div.small-8 h2 {
+    font-family: "DIN-Regular";
+}
+
+section#contact div.small-8 p {
+    font-family: "DIN-Regular";
+}
+
+section#contact div.row div.small-4 input {
+    font-family: "DIN-Regular";
+    border-color: #000000;
+    color: #000000;
+}
+
+section#contact div.row div.small-12 textarea {
+    font-family: "DIN-Regular";
+    border-color: #000000;
+    color: rgba(0, 0, 0, 1);
 }
 
 footer {
@@ -504,4 +616,9 @@ footer div.row div#right-section h3 {
     color: #FFFFFF;
     font-family: "DIN-Regular";
     font-size: 1.5rem;
+}
+
+footer div.row #right-section form div.row a.button {
+    background: #FFFFFF;
+    color: #000000;
 }
