@@ -208,6 +208,10 @@ nav.top-bar ul li {
     width: calc(100% / 8)
 }
 
+nav.top-bar ul li:hover {
+    background-color: #000000;
+}
+
 nav.top-bar ul li > a {
     background: none !important;
     color: #000000;
@@ -293,7 +297,8 @@ section#news {
     width: 100%;
 }
 
-section#news div.row {
+section#news div#news-wrapper {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     height: 100%;
     max-width: 100%;
     width: 100%;
@@ -418,6 +423,13 @@ section#events {
     width: 100%;
 }
 
+section#events div#events-wrapper {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
 section#events h1 {
     color: #FFFFFF;
     font-family: "DIN-Regular";
@@ -505,6 +517,15 @@ section#press {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+section#press div#press-wrapper {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
 }
 
 section#press h1 {
