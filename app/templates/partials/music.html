@@ -1,0 +1,87 @@
+<div class="row" id="music-wrapper">
+  <h1>Music</h1>
+  <div class="small-12 small-centered columns">
+    <div class="row">
+      <div class="small-6 columns" id="current-cover">
+        <img id="album-cover" src="{{ url_for('static', filename='img/music/album-selected/sudden-movements.png') }}"/>
+      </div>
+      <div class="small-6 columns" id="album-info">
+        <div class="row">
+          <div class="small-4 columns" id="year">
+            <h2>2011</h2>
+          </div>
+          <div class="small-6 columns end" id="ui">
+            <ul class="inline-list">
+              <li id="reverse"><img src="{{ url_for('static', filename='img/music/ui/reverse.png') }}"/></li>
+              <li id="play"><img src="{{ url_for('static', filename='img/music/ui/play.png') }}"/></li>
+              <li id="fast-forward"><img src="{{ url_for('static', filename='img/music/ui/fast-forward.png') }}"/></li>
+            </ul>
+          </div>
+        </div>
+        <h2>Sudden Movements</h2>
+        <div class="row" id="production">
+          <div class="small-2 columns">
+            <img src="{{ url_for('static', filename='img/music/icon/production.png') }}"/>
+          </div>
+          <div class="small-10 columns">
+            <h6>Production</h6>
+            <p>All Songs Written and Produced By Andrew Weiss</p>
+          </div>
+        </div>
+        <div class="row" id="recording">
+          <div class="small-2 columns">
+            <img src="{{ url_for('static', filename='img/music/icon/recording.png') }}"/>
+          </div>
+          <div class="small-10 columns">
+            <h6>Recording</h6>
+            <p>Recorded Summer of 2011 @ St. Tiogawerewolf Studios</p>
+          </div>
+        </div>
+        <div class="row" id="instruments">
+          <div class="small-2 columns">
+            <img src="{{ url_for('static', filename='img/music/icon/instruments.png') }}"/>
+          </div>
+          <div class="small-10 columns">
+            <h6>Instruments</h6>
+            <p>Andrew Weiss performs all drums, percussion, guitars, bass, keyboards, leads and backing vocals</p>
+          </div>
+        </div>
+        <div class="row" id="album-art">
+          <div class="small-2 columns">
+            <img src="{{ url_for('static', filename='img/music/icon/album-art.png') }}"/>
+          </div>
+          <div class="small-10 columns">
+            <h6>Album Art</h6>
+            <p>Jenna Krypell</h6>
+          </div>
+        </div>
+        <h6>Songs (10)</h6>
+        <div class="row" id="track-list">
+          <ol>
+            <div class="small-6 columns">
+              <li>Time Capsule</li>
+              <li>Invisible</li>
+              <li>Show Me The Light</li>
+              <li>Down To The Wire</li>
+              <li>Get It Together</li>
+            </div>
+            <div class="small-6 columns">
+              <li>Out In The Distance</li>
+              <li>Save Me A Place In The Sky</li>
+              <li>Running Around In Circles</li>
+              <li>I Don't Know Why</li>
+              <li>Highway Through The Universe</li>
+            </div>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <ul class="small-block-grid-5">
+      <li><img src="{{ url_for('static', filename='img/music/album-thumbnail/poster-boy.png') }}"/></li>
+      <li><img src="{{ url_for('static', filename='img/music/album-thumbnail/how-do-you-do.png') }}"/></li>
+      <li><img src="{{ url_for('static', filename='img/music/album-thumbnail/a-time-and-place.png') }}"/></li>
+      <li><img src="{{ url_for('static', filename='img/music/album-thumbnail/sudden-movements.png') }}"/></li>
+      <li><img src="{{ url_for('static', filename='img/music/album-thumbnail/objections.png') }}"/></li>
+    </ul>
+  </div>
+</div>
