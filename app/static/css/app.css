@@ -68,7 +68,7 @@ html, body {
 }
 
 /* Landing Page */
-section#landing {
+#landing {
     background: url('../img/home/red-lion-bg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -77,18 +77,18 @@ section#landing {
     height: 100%;
 }
 
-section#landing div.row {
+#landing .row {
     height: 100%;
 }
 
-section#landing div.row div.small-12 img {
+#landing .row .small-12 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
 }
 
-section#landing div.row div.small-12 div#social-bar {
+#landing .row .small-12 #social-bar {
     float: left;
     height: 100%;
     overflow: hidden;
@@ -96,7 +96,7 @@ section#landing div.row div.small-12 div#social-bar {
     width: 100%;
 }
 
-section#landing div.row div.small-12 div#social-bar ul.social-bar {
+#landing .row .small-12 #social-bar .social-bar {
     clear: left;
     float: left;
     left: 50%;
@@ -107,7 +107,7 @@ section#landing div.row div.small-12 div#social-bar ul.social-bar {
     text-align: center;
 }
 
-section#landing div.row div.small-12 div#social-bar ul.social-bar li {
+#landing .row .small-12 #social-bar .social-bar li {
     display: block;
     float: left;
     list-style: none;
@@ -313,42 +313,15 @@ section#news div.row h1 {
     text-align: center;
 }
 
-section#news div.row div#facebook-column {
-    border: 5px solid #FFFFFF;
-}
-
-section#news div#facebook-column h2 {
-    color: #FFFFFF;
-    font-family: DIN-Regular;
-    margin-right: 10%;
-    text-align: center;
-}
-
-section#news div#other-column {
-    margin-right: 5%;
-}
-
-section#news div#other-column div#twitter-section {
-    border: 5px solid #FFFFFF;
-    margin-bottom: 5%;
-}
-
-section#news div#other-column div#instagram-section {
-    border: 5px solid #FFFFFF;
-}
-
-section#news div#other-column h2 {
-    color: #FFFFFF;
-    font-family: "DIN-Regular";
-    text-align: center
-}
-
 /* Music Section */
 section#music {
     height: 100%;
+    max-width: 100%;
+    width: 100%;
 }
 
-section#music div.row {
+section#music div#music-wrapper {
+    height: 100%;
 }
 
 section#music h1 {
@@ -451,7 +424,7 @@ section#events div#event-listing div.date-wrapper h3 {
     font-size: 200%;
     text-align: center;
     padding-top: 15%;
-} 
+}
 
 section#events div#event-listing div.date-wrapper h1 {
     padding-top: 5%;
@@ -517,8 +490,6 @@ section#press {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    max-width: 100%;
-    width: 100%;
 }
 
 section#press div#press-wrapper {
